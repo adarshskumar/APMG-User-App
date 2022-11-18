@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 ThemeData theme() {
   return ThemeData(
-    scaffoldBackgroundColor: Colors.white,
+    scaffoldBackgroundColor: Color(0xFFEBE7E2),
     fontFamily: 'Poppins',
     visualDensity: VisualDensity.comfortable,
     backgroundColor: Colors.black,
