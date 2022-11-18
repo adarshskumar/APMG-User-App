@@ -81,12 +81,11 @@ class _InvoiceState extends State<Invoice> {
                 children: [
                   TextField(
                     decoration: InputDecoration(
-                        fillColor: dark30.withOpacity(0.4),
+                        fillColor: dark30.withOpacity(0.2),
                         filled: true,
                         border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(5),
+                            borderRadius: BorderRadius.circular(10),
                             borderSide: BorderSide.none),
-//                  labelText: 'Select a Customer',
                         hintText: 'Select a Customer',
                         prefixIcon: Icon(
                           FontAwesomeIcons.search,

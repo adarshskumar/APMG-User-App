@@ -1,4 +1,5 @@
 import 'package:apmg/presentation/home/home.dart';
+import 'package:apmg/presentation/showcase/screen_showcase.dart';
 import 'package:apmg/screens/invoice.dart';
 import 'package:apmg/presentation/login/login_screen.dart';
 import 'package:apmg/presentation/login/splash_screen.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'APMG',
       theme: theme(),
-      home: SplashScreen(),
+      home: ScreenShowCase(),
     );
   }
 }

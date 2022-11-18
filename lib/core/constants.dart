@@ -8,3 +8,4 @@ const dark70 = Color(0xFFA1855A);
 const black = Colors.black;
 const textFieldPlaceholderColor = Color(0xFF868686);
 const textFieldBgColor = Color(0xFF636043);
+const borderColor = Color(0xFF868686);
