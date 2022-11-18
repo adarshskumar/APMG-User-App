@@ -2,7 +2,7 @@ import 'package:apmg/screens/home.dart';
 import 'package:apmg/screens/invoice.dart';
 import 'package:apmg/screens/login_screen.dart';
 import 'package:apmg/screens/splash_screen.dart';
-import 'package:apmg/theme.dart';
+import 'package:apmg/core/theme.dart';
 import 'package:flutter/material.dart';
 
 void main() {

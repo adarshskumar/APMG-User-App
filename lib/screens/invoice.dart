@@ -2,7 +2,7 @@ import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import '../constants.dart';
+import '../core/constants.dart';
 
 class Invoice extends StatefulWidget {
   const Invoice({Key? key}) : super(key: key);
@@ -33,7 +33,7 @@ class _InvoiceState extends State<Invoice> {
       bottomNavigationBar: ConvexAppBar(
         color: Colors.white,
         backgroundColor: dark30,
-        height: height * 0.072,
+        height: height * 0.075,
         activeColor: Colors.white.withOpacity(0.01),
         items: const [
           TabItem(
@@ -431,42 +431,42 @@ class _InvoiceState extends State<Invoice> {
                           child: Column(children: [
                             TextField(
                               decoration: InputDecoration(
-                                fillColor: dark30.withOpacity(0.4),
-                                filled: true,
-                                border: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(5),
-                                    borderSide: BorderSide.none),
-                                hintText: "ShipVia",
-                                suffixIcon: Icon(FontAwesomeIcons.shippingFast)
-                              ),
+                                  fillColor: dark30.withOpacity(0.4),
+                                  filled: true,
+                                  border: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(5),
+                                      borderSide: BorderSide.none),
+                                  hintText: "ShipVia",
+                                  suffixIcon:
+                                      Icon(FontAwesomeIcons.shippingFast)),
                             ),
                             SizedBox(
                               height: height * 0.02,
                             ),
                             TextField(
                               decoration: InputDecoration(
-                                fillColor: dark30.withOpacity(0.4),
-                                filled: true,
-                                border: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(5),
-                                    borderSide: BorderSide.none),
+                                  fillColor: dark30.withOpacity(0.4),
+                                  filled: true,
+                                  border: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(5),
+                                      borderSide: BorderSide.none),
                                   hintText: "Shipping Location",
-                                  suffixIcon: Icon(FontAwesomeIcons.locationPin)
-                              ),
+                                  suffixIcon:
+                                      Icon(FontAwesomeIcons.locationPin)),
                             ),
                             SizedBox(
                               height: height * 0.02,
                             ),
                             TextField(
                               decoration: InputDecoration(
-                                fillColor: dark30.withOpacity(0.4),
-                                filled: true,
-                                border: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(5),
-                                    borderSide: BorderSide.none),
-                                hintText: "Terms Days",
-                                suffixIcon: Icon(FontAwesomeIcons.calendarDays)
-                              ),
+                                  fillColor: dark30.withOpacity(0.4),
+                                  filled: true,
+                                  border: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(5),
+                                      borderSide: BorderSide.none),
+                                  hintText: "Terms Days",
+                                  suffixIcon:
+                                      Icon(FontAwesomeIcons.calendarDays)),
                             ),
                             SizedBox(
                               height: height * 0.02,
@@ -507,7 +507,8 @@ class _InvoiceState extends State<Invoice> {
                                 Text(
                                   "Discount",
                                   style: TextStyle(
-                                      fontSize: 18, fontWeight: FontWeight.w300),
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w300),
                                 ),
                               ],
                             ),
@@ -519,7 +520,8 @@ class _InvoiceState extends State<Invoice> {
                                 Text(
                                   "Misc. Charge",
                                   style: TextStyle(
-                                      fontSize: 18, fontWeight: FontWeight.w300),
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w300),
                                 ),
                               ],
                             ),
@@ -531,7 +533,8 @@ class _InvoiceState extends State<Invoice> {
                                 Text(
                                   "Shipping Charge",
                                   style: TextStyle(
-                                      fontSize: 18, fontWeight: FontWeight.w300),
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w300),
                                 ),
                               ],
                             ),
@@ -543,14 +546,17 @@ class _InvoiceState extends State<Invoice> {
                                 Text(
                                   "Sub Total",
                                   style: TextStyle(
-                                      fontSize: 18, fontWeight: FontWeight.w300),
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w300),
                                 ),
                               ],
                             ),
                             SizedBox(
                               height: height * 0.02,
                             ),
-                            const Divider(color: black,),
+                            const Divider(
+                              color: black,
+                            ),
                             SizedBox(
                               height: height * 0.02,
                             ),
@@ -559,7 +565,8 @@ class _InvoiceState extends State<Invoice> {
                                 Text(
                                   "Net Invoice Amount",
                                   style: TextStyle(
-                                      fontSize: 18, fontWeight: FontWeight.w300),
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w300),
                                 ),
                               ],
                             ),
@@ -568,9 +575,19 @@ class _InvoiceState extends State<Invoice> {
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: const[
-                                Text("email",style: TextStyle(fontSize: 18,fontWeight:FontWeight.w500),),
-                                Text("fax",style: TextStyle(fontSize: 18,fontWeight:FontWeight.w500),),
+                              children: const [
+                                Text(
+                                  "email",
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w500),
+                                ),
+                                Text(
+                                  "fax",
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w500),
+                                ),
                               ],
                             )
                           ])),
