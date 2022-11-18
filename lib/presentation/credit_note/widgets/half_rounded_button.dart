@@ -1,12 +1,12 @@
 import 'package:apmg/core/constants.dart';
 import 'package:flutter/material.dart';
 
-class RoundedButton extends StatelessWidget {
+class HalfRoundedButton extends StatelessWidget {
   final String text;
   final Color? color, textColor, bgColor;
   final void Function() press;
   final double rad;
-  const RoundedButton(
+  const HalfRoundedButton(
       {Key? key,
       required this.text,
       this.textColor = Colors.white,
@@ -21,7 +21,7 @@ class RoundedButton extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     var height = MediaQuery.of(context).size.height;
     return Container(
-      width: size.width,
+      width: size.width * 0.38,
       height: height * 0.065,
       decoration: BoxDecoration(
         color: bgColor,
@@ -37,7 +37,7 @@ class RoundedButton extends StatelessWidget {
             style: TextStyle(
               color: textColor,
               fontWeight: FontWeight.w400,
-              fontSize: 17,
+              fontSize: 16,
             ),
           ),
         ),

@@ -50,14 +50,19 @@ class LoginScreen extends StatelessWidget {
                     icon: Icons.remove_red_eye_outlined,
                   ),
                   SizedBox(height: width * 0.07),
-                  RoundedButton(
-                      text: 'Login',
-                      press: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => const Home()),
-                        );
-                      })
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: width * 0.18),
+                    child: RoundedButton(
+                        rad: 30,
+                        text: 'Login',
+                        press: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Home()),
+                          );
+                        }),
+                  )
                 ],
               ),
             ),
