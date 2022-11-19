@@ -46,9 +46,10 @@ class _InvoiceState extends State<Invoice> {
           ),
           drawer: const Drawer(),
           bottomNavigationBar: BottomNavigationBar(
-            //initialActiveIndex: indexNotifier.value,
+            type: BottomNavigationBarType.fixed,
+            backgroundColor: dark70,
             selectedItemColor: Colors.white,
-            unselectedItemColor: Colors.white,
+            unselectedItemColor: Colors.white.withOpacity(0.7),
             selectedIconTheme: IconThemeData(color: Colors.white),
             unselectedIconTheme: IconThemeData(color: Colors.white),
             currentIndex: indexNotifier.value,
@@ -58,7 +59,7 @@ class _InvoiceState extends State<Invoice> {
               BottomNavigationBarItem(
                   backgroundColor: dark70,
                   icon: Icon(
-                    FontAwesomeIcons.user,
+                    FontAwesomeIcons.solidUser,
                     color: Colors.white,
                   ),
                   label: 'Account'),
