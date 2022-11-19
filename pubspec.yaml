@@ -35,6 +35,7 @@ dependencies:
   font_awesome_flutter: ^10.2.1
   convex_bottom_bar:
   carousel_indicator:
+  provider: ^6.0.4
   
 dev_dependencies:
   flutter_test:
