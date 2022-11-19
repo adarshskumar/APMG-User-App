@@ -1,9 +1,9 @@
+import 'package:apmg/presentation/home/widgets/navigation_drawer.dart';
 import 'package:apmg/presentation/invoice/widgets/account.dart';
 import 'package:apmg/presentation/invoice/widgets/billing.dart';
 import 'package:apmg/presentation/invoice/widgets/invoice_screen.dart';
 import 'package:apmg/presentation/invoice/widgets/item.dart';
 import 'package:apmg/presentation/invoice/widgets/shipping.dart';
-import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -45,7 +45,7 @@ class _InvoiceState extends State<Invoice> {
             ),
             centerTitle: true,
           ),
-          drawer: const Drawer(),
+          drawer: const NavigationDrawer(),
           bottomNavigationBar: BottomNavigationBar(
             type: BottomNavigationBarType.fixed,
             backgroundColor: dark70,

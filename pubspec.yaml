@@ -33,7 +33,6 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   font_awesome_flutter: ^10.2.1
-  convex_bottom_bar:
   carousel_indicator:
   
 dev_dependencies:

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/constants.dart';
+
 class ScreenShipping extends StatelessWidget {
   const ScreenShipping({Key? key}) : super(key: key);
 
@@ -10,13 +11,12 @@ class ScreenShipping extends StatelessWidget {
     var width = MediaQuery.of(context).size.width;
     return Scaffold(
       body: SingleChildScrollView(
-        padding: EdgeInsets.only(
-            left: width * 0.05, right: width * 0.05),
+        padding: EdgeInsets.only(left: width * 0.05, right: width * 0.05),
         child: Column(
           children: [
             TextField(
               decoration: InputDecoration(
-                fillColor: dark30.withOpacity(0.4),
+                fillColor: dark30.withOpacity(0.2),
                 filled: true,
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(5),
@@ -29,7 +29,7 @@ class ScreenShipping extends StatelessWidget {
             ),
             TextField(
               decoration: InputDecoration(
-                fillColor: dark30.withOpacity(0.4),
+                fillColor: dark30.withOpacity(0.2),
                 filled: true,
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(5),
@@ -42,7 +42,7 @@ class ScreenShipping extends StatelessWidget {
             ),
             TextField(
               decoration: InputDecoration(
-                fillColor: dark30.withOpacity(0.4),
+                fillColor: dark30.withOpacity(0.2),
                 filled: true,
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(5),
@@ -55,7 +55,7 @@ class ScreenShipping extends StatelessWidget {
             ),
             TextField(
               decoration: InputDecoration(
-                fillColor: dark30.withOpacity(0.4),
+                fillColor: dark30.withOpacity(0.2),
                 filled: true,
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(5),
@@ -68,7 +68,7 @@ class ScreenShipping extends StatelessWidget {
             ),
             TextField(
               decoration: InputDecoration(
-                fillColor: dark30.withOpacity(0.4),
+                fillColor: dark30.withOpacity(0.2),
                 filled: true,
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(5),
@@ -81,7 +81,7 @@ class ScreenShipping extends StatelessWidget {
             ),
             TextField(
               decoration: InputDecoration(
-                fillColor: dark30.withOpacity(0.4),
+                fillColor: dark30.withOpacity(0.2),
                 filled: true,
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(5),
@@ -94,7 +94,7 @@ class ScreenShipping extends StatelessWidget {
             ),
             TextField(
               decoration: InputDecoration(
-                fillColor: dark30.withOpacity(0.4),
+                fillColor: dark30.withOpacity(0.2),
                 filled: true,
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(5),
@@ -107,7 +107,7 @@ class ScreenShipping extends StatelessWidget {
             ),
             TextField(
               decoration: InputDecoration(
-                fillColor: dark30.withOpacity(0.4),
+                fillColor: dark30.withOpacity(0.2),
                 filled: true,
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(5),

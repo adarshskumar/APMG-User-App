@@ -1,3 +1,6 @@
+import 'package:apmg/presentation/favorites/screen_fav.dart';
+import 'package:apmg/presentation/home/home_screen.dart';
+import 'package:apmg/presentation/show/screen_show.dart';
 import 'package:flutter/material.dart';
 
 class NavigationDrawer extends StatelessWidget {
@@ -31,6 +34,22 @@ Widget buildMenuItems(BuildContext context) => Container(
         runSpacing: 6,
         children: [
           ListTile(
+            leading: const Icon(Icons.home),
+            title: const Text(
+              'Home',
+              style: TextStyle(
+                fontSize: 16,
+                fontFamily: 'Poppins',
+              ),
+            ),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => HomeScreen()),
+              );
+            },
+          ),
+          ListTile(
             leading: const Icon(Icons.star),
             title: const Text(
               'Show',
@@ -39,7 +58,12 @@ Widget buildMenuItems(BuildContext context) => Container(
                 fontFamily: 'Poppins',
               ),
             ),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ScreenShow()),
+              );
+            },
           ),
           ListTile(
             leading: const Icon(Icons.favorite_border_outlined),
@@ -50,7 +74,12 @@ Widget buildMenuItems(BuildContext context) => Container(
                 fontFamily: 'Poppins',
               ),
             ),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ScreenFav()),
+              );
+            },
           ),
           ListTile(
             leading: const Icon(Icons.info_outline_rounded),

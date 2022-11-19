@@ -1,4 +1,5 @@
 import 'package:apmg/presentation/home/home.dart';
+import 'package:apmg/presentation/home/home_screen.dart';
 import 'package:apmg/presentation/home/menu_dashboard.dart';
 import 'package:apmg/presentation/login/widgets/rounded_button.dart';
 import 'package:apmg/presentation/login/widgets/rounded_input_field.dart';
@@ -58,7 +59,7 @@ class LoginScreen extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => MenuDashboardPage()),
+                                builder: (context) => HomeScreen()),
                           );
                         }),
                   )

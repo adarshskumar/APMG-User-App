@@ -34,7 +34,9 @@ class _ProductShowcaseState extends State<ProductShowcase> {
               size: 26,
             ),
             color: borderColor,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pop(context);
+            },
           ),
           title: const SearchField(
             prefixIcon: 'assets/icons/qrcode.png',

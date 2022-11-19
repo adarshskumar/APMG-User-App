@@ -19,7 +19,7 @@ class ScreenInvoice extends StatelessWidget {
           child: Column(children: [
             TextField(
               decoration: InputDecoration(
-                  fillColor: dark30.withOpacity(0.4),
+                  fillColor: dark30.withOpacity(0.2),
                   filled: true,
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5),
@@ -32,7 +32,7 @@ class ScreenInvoice extends StatelessWidget {
             ),
             TextField(
               decoration: InputDecoration(
-                  fillColor: dark30.withOpacity(0.4),
+                  fillColor: dark30.withOpacity(0.2),
                   filled: true,
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5),
@@ -45,7 +45,7 @@ class ScreenInvoice extends StatelessWidget {
             ),
             TextField(
               decoration: InputDecoration(
-                  fillColor: dark30.withOpacity(0.4),
+                  fillColor: dark30.withOpacity(0.2),
                   filled: true,
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5),
@@ -58,7 +58,7 @@ class ScreenInvoice extends StatelessWidget {
             ),
             TextField(
               decoration: InputDecoration(
-                fillColor: dark30.withOpacity(0.4),
+                fillColor: dark30.withOpacity(0.2),
                 filled: true,
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(5),

@@ -1,23 +1,22 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/constants.dart';
+
 class ScreenBilling extends StatelessWidget {
   const ScreenBilling({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-
     var height = MediaQuery.of(context).size.height;
     var width = MediaQuery.of(context).size.width;
     return Scaffold(
       body: SingleChildScrollView(
-        padding: EdgeInsets.only(
-            left: width * 0.05, right: width * 0.05),
+        padding: EdgeInsets.only(left: width * 0.05, right: width * 0.05),
         child: Column(
           children: [
             TextField(
               decoration: InputDecoration(
-                fillColor: dark30.withOpacity(0.4),
+                fillColor: dark30.withOpacity(0.2),
                 filled: true,
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(5),
@@ -30,7 +29,7 @@ class ScreenBilling extends StatelessWidget {
             ),
             TextField(
               decoration: InputDecoration(
-                fillColor: dark30.withOpacity(0.4),
+                fillColor: dark30.withOpacity(0.2),
                 filled: true,
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(5),
@@ -43,7 +42,7 @@ class ScreenBilling extends StatelessWidget {
             ),
             TextField(
               decoration: InputDecoration(
-                fillColor: dark30.withOpacity(0.4),
+                fillColor: dark30.withOpacity(0.2),
                 filled: true,
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(5),
@@ -56,7 +55,7 @@ class ScreenBilling extends StatelessWidget {
             ),
             TextField(
               decoration: InputDecoration(
-                fillColor: dark30.withOpacity(0.4),
+                fillColor: dark30.withOpacity(0.2),
                 filled: true,
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(5),
@@ -69,7 +68,7 @@ class ScreenBilling extends StatelessWidget {
             ),
             TextField(
               decoration: InputDecoration(
-                fillColor: dark30.withOpacity(0.4),
+                fillColor: dark30.withOpacity(0.2),
                 filled: true,
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(5),
@@ -82,7 +81,7 @@ class ScreenBilling extends StatelessWidget {
             ),
             TextField(
               decoration: InputDecoration(
-                fillColor: dark30.withOpacity(0.4),
+                fillColor: dark30.withOpacity(0.2),
                 filled: true,
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(5),
@@ -95,7 +94,7 @@ class ScreenBilling extends StatelessWidget {
             ),
             TextField(
               decoration: InputDecoration(
-                fillColor: dark30.withOpacity(0.4),
+                fillColor: dark30.withOpacity(0.2),
                 filled: true,
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(5),
@@ -108,7 +107,7 @@ class ScreenBilling extends StatelessWidget {
             ),
             TextField(
               decoration: InputDecoration(
-                fillColor: dark30.withOpacity(0.4),
+                fillColor: dark30.withOpacity(0.2),
                 filled: true,
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(5),

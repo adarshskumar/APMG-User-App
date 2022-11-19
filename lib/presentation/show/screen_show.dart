@@ -1,11 +1,11 @@
 import 'package:apmg/core/constants.dart';
 import 'package:apmg/presentation/credit_note/widgets/half_rounded_button.dart';
 import 'package:apmg/presentation/home/widgets/navigation_drawer.dart';
-import 'package:apmg/presentation/pod/widgets/invoice_field.dart';
+import 'package:apmg/presentation/showcase/widgets/search_field.dart';
 import 'package:flutter/material.dart';
 
-class ScreenPOD extends StatelessWidget {
-  const ScreenPOD({super.key});
+class ScreenShow extends StatelessWidget {
+  const ScreenShow({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class ScreenPOD extends StatelessWidget {
             );
           },
         ),
-        title: const Text('POD'),
+        title: const Text('Show'),
       ),
       drawer: const NavigationDrawer(),
       body: SafeArea(
@@ -38,31 +38,37 @@ class ScreenPOD extends StatelessWidget {
               horizontal: width * 0.08, vertical: width * 0.06),
           child: Column(
             children: [
-              const InvoiceField(
-                hintText: 'Invoice',
-                suffixIcon: Icon(
-                  Icons.close,
-                  color: textFieldPlaceholderColor,
-                ),
+              TextField(
+                decoration: InputDecoration(
+                    fillColor: dark30.withOpacity(0.2),
+                    filled: true,
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        borderSide: BorderSide.none),
+                    hintText: 'Show',
+                    prefixIcon: Icon(
+                      Icons.arrow_drop_down_circle_outlined,
+                      color: black.withOpacity(0.5),
+                    )),
               ),
               SizedBox(
                 height: height * 0.06,
               ),
-              const InvoiceField(
-                hintText: 'Draw your signature',
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  HalfRoundedButton(
+                      bgColor: dark30.withOpacity(0.3),
+                      text: 'Cancel',
+                      textColor: Colors.black,
+                      press: () {}),
+                  HalfRoundedButton(
+                      bgColor: primaryYellow,
+                      text: 'Save Settings',
+                      textColor: Colors.white,
+                      press: () {}),
+                ],
               ),
-              SizedBox(
-                height: height * 0.06,
-              ),
-              Padding(
-                padding: EdgeInsets.only(left: width * 0.5),
-                child: HalfRoundedButton(
-                  text: 'Clear',
-                  press: () {},
-                  textColor: Colors.black,
-                  bgColor: dark30.withOpacity(0.3),
-                ),
-              )
             ],
           ),
         ),
