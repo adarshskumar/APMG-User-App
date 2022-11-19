@@ -48,12 +48,9 @@ class _InvoiceState extends State<Invoice> {
           bottomNavigationBar: BottomNavigationBar(
             //initialActiveIndex: indexNotifier.value,
             selectedItemColor: Colors.white,
-            unselectedLabelStyle: const TextStyle(
-            decorationColor: Colors.white
-            ,color: Colors.white),
-            selectedLabelStyle: const TextStyle(
-                color: Colors.white, fontWeight: FontWeight.w500),
-            //color: Colors.white,
+            unselectedItemColor: Colors.white,
+            selectedIconTheme: IconThemeData(color: Colors.white),
+            unselectedIconTheme: IconThemeData(color: Colors.white),
             currentIndex: indexNotifier.value,
             //height: height * 0.075,
             //activeColor: Colors.white.withOpacity(0.01),
