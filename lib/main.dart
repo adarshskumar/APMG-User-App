@@ -1,11 +1,12 @@
 import 'package:apmg/presentation/credit_note/credit_note.dart';
 import 'package:apmg/presentation/customer_statement/screen_customer_statement.dart';
 import 'package:apmg/presentation/home/home.dart';
+import 'package:apmg/presentation/home/home_screen.dart';
 import 'package:apmg/presentation/home/menu_dashboard.dart';
 import 'package:apmg/presentation/pod/screen_pod.dart';
 import 'package:apmg/presentation/showcase/product_showcase.dart';
 import 'package:apmg/presentation/showcase/screen_showcase.dart';
-import 'package:apmg/presentation/invoice/invoice.dart';
+import 'package:apmg/screens/invoice.dart';
 import 'package:apmg/presentation/login/login_screen.dart';
 import 'package:apmg/presentation/login/splash_screen.dart';
 import 'package:apmg/core/theme.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'APMG',
       theme: theme(),
-      home: Invoice(),
+      home: HomeScreen(),
     );
   }
 }
