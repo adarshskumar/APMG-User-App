@@ -15,13 +15,21 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: backgroundColor,
         elevation: 0,
+        leading: Padding(
+          padding: EdgeInsets.only(left: width * 0.055),
+          child: IconButton(
+            icon: Image.asset(
+              'assets/icons/menu_icon.png',
+            ),
+            onPressed: () {},
+          ),
+        ),
         title: const Text(
           "Home",
           style: TextStyle(fontSize: 22, color: black),
         ),
         centerTitle: true,
       ),
-      drawer: const Drawer(),
       body: Container(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,

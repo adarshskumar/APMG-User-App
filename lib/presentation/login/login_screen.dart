@@ -1,10 +1,9 @@
 import 'package:apmg/presentation/home/home.dart';
+import 'package:apmg/presentation/home/menu_dashboard.dart';
 import 'package:apmg/presentation/login/widgets/rounded_button.dart';
 import 'package:apmg/presentation/login/widgets/rounded_input_field.dart';
 import 'package:apmg/core/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -59,7 +58,7 @@ class LoginScreen extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const Home()),
+                                builder: (context) => MenuDashboardPage()),
                           );
                         }),
                   )
