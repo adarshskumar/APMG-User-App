@@ -1,6 +1,6 @@
 import 'package:apmg/presentation/invoice/widgets/account.dart';
 import 'package:apmg/presentation/invoice/widgets/billing.dart';
-import 'package:apmg/presentation/invoice/widgets/invoice.dart';
+import 'package:apmg/presentation/invoice/widgets/invoice_screen.dart';
 import 'package:apmg/presentation/invoice/widgets/item.dart';
 import 'package:apmg/presentation/invoice/widgets/shipping.dart';
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
