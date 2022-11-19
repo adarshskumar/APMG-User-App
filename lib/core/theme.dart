@@ -13,7 +13,7 @@ ThemeData theme() {
       centerTitle: true,
       titleTextStyle: TextStyle(
           color: Colors.black,
-          fontSize: 28,
+          fontSize: 26,
           fontFamily: 'Raleway',
           fontWeight: FontWeight.w500),
       iconTheme: IconThemeData(color: black),
