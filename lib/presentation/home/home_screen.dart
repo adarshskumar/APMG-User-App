@@ -5,6 +5,7 @@ import 'package:apmg/presentation/home/widgets/menu_icon.dart';
 import 'package:apmg/presentation/home/widgets/navigation_drawer.dart';
 import 'package:apmg/presentation/invoice/invoice.dart';
 import 'package:apmg/presentation/pod/screen_pod.dart';
+import 'package:apmg/presentation/proforma/proforma.dart';
 import 'package:apmg/presentation/showcase/screen_showcase.dart';
 import 'package:apmg/presentation/wish_list/screen_wishlist.dart';
 import 'package:flutter/material.dart';
@@ -80,11 +81,20 @@ class HomeScreen extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  MenuIcon(
-                    screenWidth: width,
-                    screenHeight: height,
-                    menuIcon: Image.asset('assets/icons/proforma.png'),
-                    menuText: 'PROFORMA',
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => Proforma()),
+                      );
+                    },
+                    child: MenuIcon(
+                      screenWidth: width,
+                      screenHeight: height,
+                      menuIcon: Image.asset('assets/icons/proforma.png'),
+                      menuText: 'PROFORMA',
+                    ),
                   ),
                   InkWell(
                     onTap: () {

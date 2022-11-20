@@ -1,32 +1,31 @@
 import 'package:apmg/presentation/home/widgets/navigation_drawer.dart';
-import 'package:apmg/presentation/invoice/widgets/invoice_customer.dart';
-import 'package:apmg/presentation/invoice/widgets/invoice_billing.dart';
-import 'package:apmg/presentation/invoice/widgets/invoice_invoicescreen.dart';
-import 'package:apmg/presentation/invoice/widgets/invoice_item.dart';
-import 'package:apmg/presentation/invoice/widgets/invoice_shipping.dart';
+import 'package:apmg/presentation/proforma/widgets/proforma_account.dart';
+import 'package:apmg/presentation/proforma/widgets/proforma_billing.dart';
+import 'package:apmg/presentation/proforma/widgets/proforma_invoice.dart';
+import 'package:apmg/presentation/proforma/widgets/proforma_item.dart';
+import 'package:apmg/presentation/proforma/widgets/proforma_shipping.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../../core/constants.dart';
-import '../proforma/widgets/proforma_account.dart';
 
 ValueNotifier<int> indexNotifier = ValueNotifier(0);
 
 //code
-class Invoice extends StatefulWidget {
-  const Invoice({Key? key}) : super(key: key);
-  final pages = const[
-    ScreenCustomer(),
-    ScreenItem(),
-    ScreenBilling(),
-    ScreenShipping(),
-    ScreenInvoice()
+class Proforma extends StatefulWidget {
+  const Proforma({Key? key}) : super(key: key);
+  final pages = const [
+    ProformaCustomer(),
+    ProformaItem(),
+    ProformaBilling(),
+    ProformaShipping(),
+    ProformaInvoice(),
   ];
   @override
-  State<Invoice> createState() => _InvoiceState();
+  State<Proforma> createState() => _ProformaState();
 }
 
-class _InvoiceState extends State<Invoice> {
+class _ProformaState extends State<Proforma> {
   @override
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
@@ -41,7 +40,7 @@ class _InvoiceState extends State<Invoice> {
             backgroundColor: backgroundColor,
             elevation: 0,
             title: const Text(
-              "Invoice",
+              "Proforma",
               style: TextStyle(fontSize: 22, color: black),
             ),
             centerTitle: true,
@@ -52,8 +51,8 @@ class _InvoiceState extends State<Invoice> {
             backgroundColor: dark70,
             selectedItemColor: Colors.white,
             unselectedItemColor: Colors.white.withOpacity(0.7),
-            selectedIconTheme: IconThemeData(color: Colors.white),
-            unselectedIconTheme: IconThemeData(color: Colors.white),
+            selectedIconTheme:const IconThemeData(color: Colors.white),
+            unselectedIconTheme:const IconThemeData(color: Colors.white),
             currentIndex: indexNotifier.value,
             //height: height * 0.075,
             //activeColor: Colors.white.withOpacity(0.01),
@@ -64,7 +63,7 @@ class _InvoiceState extends State<Invoice> {
                     FontAwesomeIcons.solidUser,
                     color: Colors.white,
                   ),
-                  label: 'Account'),
+                  label: 'Customer'),
               BottomNavigationBarItem(
                   backgroundColor: dark70,
                   icon: Icon(
