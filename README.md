@@ -1,10 +1,8 @@
 # apmg
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
+Apollo Manufacturing User App UI
+UI Developed as part of a APMG Project
+Apollo App is a mobile app targeting jewellery manufactures in USA
 
 A few resources to get you started if this is your first Flutter project:
 
